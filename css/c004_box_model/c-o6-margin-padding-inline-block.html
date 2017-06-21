@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        #left,#right {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: purple;
+            
+            color:lime;
+        }
+        #left {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 5000000px;
+            
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 82px;
+        }
+        #bottom {
+            height: 100px;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+   <li>margin-right works until it push all other elements in the line to the next line</li>
+    <div id='left'>Left</div>
+    <div id='right'>Right</div>
+    <div id='bottom'></div>
+</body>
+</html>

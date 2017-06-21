@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        #rgb {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255,0,0);
+        }
+        #rgba {
+            width: 100px;
+            height:100px;
+            background-color: rgba(255,0,0,0.5);
+        }
+        img {
+            width: 200px;
+        }
+        img:hover {
+            opacity: 0.5;
+        }
+        #hsl {
+            background-color: hsl(0,100%,50%);
+        }
+        #hsla {
+            background-color: hsla(0,100%,50%,0.5);
+        }
+        #hex {
+            background-color: #0FF;
+        }
+        #hexa {
+            background-color: #0000FF;
+            opacity: 1;
+        }
+        #name {
+            background-color: #0000FF;
+        }
+        #name:hover {
+            opacity: 0.5;
+        }
+        #namea {
+            background-color: #0000FF;
+            opacity: 0.5;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>RGB (Red,Green,Blue)</h1>
+    <div id="rgb"></div>
+    <div id="rgba"></div>
+    
+    <h1>HSL (hue, saturatio, lightness)</h1>
+    <img src="http://hugogiraudel.com/assets/images/css-colors/color-hsl.jpg" alt="">
+    <div id="hsl"></div>
+    <div id="hsla"></div>
+    
+    <h1>Hex</h1>
+    
+    <div id="hex"></div>
+    <div id="hexa"></div>
+    
+    <h1>Color name</h1>
+    <div id="name"></div>
+    <div id="namea"></div>
+</body>
+</html>

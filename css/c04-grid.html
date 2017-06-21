@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            border: solid blue 1px;
+            height: 100px;
+            width: 185px;
+        }
+        
+        footer {
+            background-color: skyblue;
+            height: 40px;
+            clear: both
+        }
+        
+        .float{
+            float: left;
+        }
+        .inline{
+            display: inline-block
+        }
+    </style>
+</head>
+<body>
+   <h1>With float, we need clear</h1>
+    <div id="one" class='float'></div>   
+    <div id="two" class='float'></div>
+    <div id="three" class='float'></div>
+    <div id="four" class='float'></div
+    ><div id="five" class='float'></div>
+    <div id="six" class='float'></div>
+    <footer>Copyleft</footer>
+    <h1>With inline-block we don't need clear but they have a gap</h1>
+    <div id="one" class='inline'></div>   
+    <div id="two" class='inline'></div>
+    <div id="three" class='inline'></div>
+    <div id="four" class='inline'></div
+    ><div id="five" class='inline'></div>
+    <div id="six" class='inline'></div>
+    <footer>Copyleft</footer>
+</body>
+</html>

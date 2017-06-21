@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 100px;
+            
+            background-image: url("500-100.png");
+            
+            overflow:visible;
+            overflow:hidden;
+        }
+        
+        .scroll {
+        overflow: scroll;
+        }
+        .auto {
+            overflow: auto;
+        }
+        ::-webkit-scrollbar {
+          width: 10px;
+          background-color: black;  
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    
+    <h2>Scroll</h2>
+    <div class='container scroll'></div>
+    <h2>Auto</h2>
+    <div class='container auto'></div>
+</body>
+</html>

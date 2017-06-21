@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+        .container {
+            width: 600px;
+            height: 200px;
+            border: solid 1px purple;
+            background-image: url(http://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_200/public/images/p_101566218.jpg);
+            background-repeat: no-repeat;
+            
+            overflow: auto;
+        }
+        
+        .expand {
+            height: 400px;
+        }
+        #scroll {
+            background-attachment: scroll;
+        }
+        
+        #local {
+            background-attachment: local;
+        }
+        #fixed {
+            background-attachment: fixed;
+        }
+        .container:active{
+            background-image:url(http://www.joblo.com/images_arrownews/b890c706-74a2-f057..jpg)
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Scroll: background-image scrolls along with the element</h3>
+    
+    <div class='container' id='scroll'>
+        <div class='expand'></div>
+    </div>
+    <h3>Local: background-image scrolls along the local content</h3>
+    <div class='container' id='local'>
+        <div class='expand'></div>
+    </div>
+    <h3>Fixed: background-image has fixed position relative to the viewport</h3>
+    <div class='container' id='fixed'>
+        <div class='expand'></div>
+    </div>
+</body>
+</html>

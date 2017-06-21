@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        #login label {
+            width: 80px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="anyServerResource.php" method=''>
+        <div id='login'>
+
+            <label for="">Username</label>
+            <input name='username' type="text">
+            <br>
+            <label for="">Password</label>
+            <input name='password' type="password">
+            <br>
+            
+        </div>
+        
+        <label for="">Your feedback is very important for us</label>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input list="food">
+        <datalist id="food">
+            <option value="apple"></option>
+            <option value="pizza"></option>
+            <option value="hotdog"></option>
+            <option value="noodle"></option>
+        </datalist>
+        
+        <select name="" id="">
+            <option value="London">London</option>
+            <option value="toronto">Toronto</option>
+            <option value="regina">Regina</option>
+        </select>
+        <br>
+        <meter min=1 max=10 value=4></meter>
+        <br>
+        <progress min=1 max=100 value=100></progress>
+        <button>OK button</button>
+        <br>
+        
+     <input type="submit">
+    </form>
+
+</body>
+</html>

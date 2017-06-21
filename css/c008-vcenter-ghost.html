@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 400px;
+            background-color: blueviolet;
+        }   
+        #container:before {
+            content:'';
+            width: 10px;
+            height: 400px;
+            background-color: red;
+            display:block
+        }
+        #item {
+            width: 400px;
+            height: 200px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item"></div>
+    </div>
+</body>
+</html>

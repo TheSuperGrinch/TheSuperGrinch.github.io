@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood
+        }
+        
+        div {
+            display: inline-block
+        }
+        
+        #b1,
+        #b2,
+        #b3,
+        #b4,
+        #b5,
+        #b6,
+        #b7,
+        #b8 {
+            font-family: sans-serif;
+        }
+        
+        #b1 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+        #b2 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(255, 250, 250);
+        }
+        
+        #b3 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(255, 0, 0)
+        }
+        
+        #b4 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(26, 255, 0)
+        }
+        
+        #b5 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(17, 0, 255)
+        }
+        
+        #b6 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(255, 217, 0)
+        }
+        
+        #b7 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(0, 255, 225)
+        }
+        
+        #b8 {
+            height: 25px;
+            width: 25px;
+            background-color: rgb(179, 0, 255)
+        }
+        
+        #re {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 0, 0)
+        }
+        
+        #re1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(255, 0, 0, 0.5)
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>HEX</th>
+            <th>RGB</th>
+            <th>NAME</th>
+            <th>HSL</th>
+        </tr>
+        <tr>
+            <td id="b1">hex(#000)</td>
+            <td id="b1">rgb(0,0,0)</td>
+            <td id="b1">Black</td>
+            <td id="b1">hsl(0,0%,0%)</td>
+        </tr>
+        <tr>
+            <td id="b2">hex(#fff)</td>
+            <td id="b2">rgb(255,250,250)</td>
+            <td id="b2">White</td>
+            <td id="b2">hsl(360,100%,100%)</td>
+        </tr>
+        <tr>
+            <td id="b3">hex(#f00)</td>
+            <td id="b3">rgb(255,0,0)</td>
+            <td id="b3">Red</td>
+            <td id="b3">hsl(360,100%,100%)</td>
+        </tr>
+        <tr>
+            <td id="b4">hex(#1aff00)</td>
+            <td id="b4">rgb(26,255,0)</td>
+            <td id="b4">Lime</td>
+            <td id="b4">hsl(114,100%,50%)</td>
+        </tr>
+        <tr>
+            <td id="b5">hex(#10f)</td>
+            <td id="b5">rgb(17,0,255)</td>
+            <td id="b5">Blue</td>
+            <td id="b5">hsl(244,100%,50%)</td>
+        </tr>
+        <tr>
+            <td id="b6">hex(#ffd900)</td>
+            <td id="b6">rgb(255,217,0)</td>
+            <td id="b6">Yellow</td>
+            <td id="b6">hsl(51,100%,50%)</td>
+        </tr>
+        <tr>
+            <td id="b7">hex(#00ffe1)</td>
+            <td id="b7">rgb(0,255,225)</td>
+            <td id="b7">Aqua</td>
+            <td id="b7">hsl(173,100%,50%)</td>
+        </tr>
+        <tr>
+            <td id="b8">hex(#b300ff)</td>
+            <td id="b8">rgb(179,0,255)</td>
+            <td id="b8">Magneta</td>
+            <td id="b8">hsl(282,100%,50%)</td>
+        </tr>
+    </table>
+    <h1>Alpha Channel or Opacity or Transparency</h1>
+    Use rgb function(255,0,0.5)
+    <br>
+    <div id="re"></div>
+    <div id="re1"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input,
+        button {
+            border: solid tomato 2px;
+            background: none;
+            width: 100px;
+            border-radius: 15px;
+        }
+        
+        button {
+            width: 200px;
+        }
+        
+        button img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Submit</h1>
+        <input type="submit" value="OK">
+        <h1>Input button</h1>
+        <input type="button" value="Cancel">
+
+        <h1>Image button</h1>
+        <input id="changeImg" type="image" src="http://1.bp.blogspot.com/-reODSA8Lo4I/UxqCjc57mmI/AAAAAAAAAWA/2Gzk5mTcVfY/s1600/IMG_1111.JPG">
+
+        <h1>Complex button</h1>
+        <button>
+            <img src="http://1.bp.blogspot.com/-reODSA8Lo4I/UxqCjc57mmI/AAAAAAAAAWA/2Gzk5mTcVfY/s1600/IMG_1111.JPG" alt="">
+            <span>Puppet attack button</span>
+        </button>
+    </form>
+    <script>
+        var changeImgBtn = document.getElementById('changeImg');
+        changeImgBtn.addEventListener('click', changeImg);
+        var change = true; 
+
+        function changeImg(event) {
+            event.preventDefault();
+            if (change) {
+                changeImgBtn.src = "https://i.ytimg.com/vi/YwUNJn98OXw/hqdefault.jpg";
+            } else {
+                changeImgBtn.src = "http://1.bp.blogspot.com/-   reODSA8Lo4I/UxqCjc57mmI/AAAAAAAAAWA/2Gzk5m TcVfY/s1600/IMG_1111.JPG";
+            }
+            change = !change;
+        }
+    </script>
+</body>
+
+</html>

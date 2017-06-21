@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+    <style>
+        body {
+            background-color:lime;
+        }
+        #head {
+            height:500px;
+            width:500px;
+            background-color:deepskyblue;
+            
+            border-top-right-radius: 250px;
+            border-top-left-radius: 250px;
+            border-bottom-right-radius: 250px;
+            border-bottom-left-radius: 250px;
+        }
+        #eye {
+            height:150px;
+            width:100px;
+            background-color:white;
+            
+            border-top-right-radius: 250px;
+            border-top-left-radius: 250px;
+            border-bottom-right-radius: 250px;
+            border-bottom-left-radius: 250px;
+            
+            margin-top:5px;
+            margin-left:100px;
+        }
+        #eye2 {
+            height:150px;
+            width:100px;
+            background-color:white;
+            
+            border-top-right-radius: 250px;
+            border-top-left-radius: 250px;
+            border-bottom-right-radius: 250px;
+            border-bottom-left-radius: 250px;
+            
+            margin-top:-150px;
+            margin-left:250px;
+            }
+        #pupil{
+            background-color:black;
+            height:100px;
+            width:75px;
+			
+            border-top-right-radius: 200px;
+            border-top-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+        }
+        #mouth {
+            height:341px;
+/*            background-color:black;*/
+			border: solid 5px;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			
+            width:429px;
+			left: 33px;
+			top: 71px;
+            
+            border-top-left-radius:200px;
+			border-radius: 50%;
+            position: absolute;
+        }
+        #corner{
+            background-color:black;
+            height:40px;
+            width:10px;
+            transform: rotate(40deg);
+            
+			position: absolute;
+			top:263px;
+			left:48px;
+            border-top-right-radius: 200px;
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
+        #corner2 {
+            background-color:black;
+            height:40px;
+            width:10px;
+            transform: rotate(140deg);
+			
+			top:266px;
+			right:44px;
+			position: absolute;
+            
+            border-top-right-radius: 200px;
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            
+        }
+        #head:hover{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id='head'>
+        <div id='eye'>
+            <div id='pupil'></div>
+        </div>
+        <div id='eye2'>
+            <div id='pupil'></div>
+
+        <div id='mouth'>
+            <div id='corner'></div>
+            <div id='corner2'></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
